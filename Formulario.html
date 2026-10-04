@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Club Atletico Huracán</h1>
+        <p>Completa todos los campos para crear tu cuenta</p>
+
+        <form action="#" method="POST" id="registroForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Lorena Gómez" required>
+                </div>
+
+                <div>
+                    <label for="DNI">DNI</label>
+                    <input type="text" id="DNI" name="DNI" placeholder="Ej: 49629361" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: lorena@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 11 6767-6767">
+                </div>
+
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <div>
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona una provincia...</option>
+                        <option value="AR">CABA</option>
+                        <option value="BO">Córdoba</option>
+                        <option value="BR">Entre Ríos</option>
+                        <option value="CL">Formosa</option>
+                        <option value="CO">Mendoza</option>
+                        <option value="EC">Neuquén</option>
+                        <option value="ES">Santa Fe</option>
+                        <option value="MX">Chubut</option>
+                        <option value="PE">Santa Cruz</option>
+                        <option value="UY">Río Negro</option>
+                        <option value="VE">Misiones</option>
+                        <option value="OTRO">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Categoría de Socio</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="Socio" value="Pleno">
+                            Pleno
+                        </label>
+                        <label>
+                            <input type="radio" name="Socio" value="Cadete">
+                            Cadete
+                        </label>
+                        <label>
+                            <input type="radio" name="Socio" value="Infantil">
+                            Infantil
+                        </label>
+                        <label>
+                            <input type="radio" name="Socio" value="Interior">
+                            Interior
+                        </label>
+                        <label>
+                            <input type="radio" name="Socio" value="Otro" checked>
+                            Otro
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Tribuna</label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Tribuna1">
+                            Platea Alcorta
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Tribuna2">
+                            Houseman (Ex-Miravé)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Tribuna3">
+                            Popular Bonavena 
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses" value="Tribuna4">
+                            Popular Colonia
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seguridad</legend>
+
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                </div>
+
+                <div>
+                    <label for="confirmPassword">Confirmar contraseña</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite tu contraseña" minlength="8" required>
+                </div>
+            </fieldset>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los <a href="#">Términos y condiciones</a>
+                </label>
+            </div>
+
+            <div>
+                <button type="submit">Asociarse</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
